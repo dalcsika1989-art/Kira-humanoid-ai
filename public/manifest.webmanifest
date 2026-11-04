@@ -1,0 +1,10 @@
+{
+  "name": "KIRA — AI companion",
+  "short_name": "KIRA",
+  "description": "Your personal AI companion, powered by Gemini.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#060e12",
+  "theme_color": "#060e12",
+  "lang": "en"
+}

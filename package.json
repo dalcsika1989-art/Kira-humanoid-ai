@@ -1,0 +1,32 @@
+{
+  "name": "kira-ai",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "dev:server": "node --env-file-if-exists=.env server/dev.mjs",
+    "build": "tsc -b && vite build && node scripts/build-server.mjs",
+    "start": "node --env-file-if-exists=.env server/dev.mjs --production",
+    "test": "node --test tests/*.test.mjs",
+    "check": "tsc -b",
+    "android:sync": "npm run build && cap sync android"
+  },
+  "dependencies": {
+    "@capacitor/android": "^7.4.3",
+    "@capacitor/core": "^7.4.3",
+    "livekit-client": "^2.15.6",
+    "lucide-react": "^0.468.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^7.4.3",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^4.5.0",
+    "esbuild": "^0.25.0",
+    "typescript": "~5.8.3",
+    "vite": "^6.3.6"
+  }
+}
